@@ -287,3 +287,9 @@ exercises.c:90:12: error: request for member ‘i’ in something not a structur
       |            ^
 Compilation failed
 8d3e90b
+Sun 14 Aug 2022 01:14:12 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  3|4
+total_score: 30/70
+c72d65f
