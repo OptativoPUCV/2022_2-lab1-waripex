@@ -233,3 +233,17 @@ exercises.c:82:11: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 ec1ef21
+Sun 14 Aug 2022 01:10:19 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:81:11: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   81 |   int v = calloc(n,sizeof(int));
+      |           ^~~~~~
+exercises.c:82:11: error: returning ‘int’ from a function with return type ‘Vector *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   82 |    return v;
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+003e2fe
