@@ -80,7 +80,7 @@ typedef struct {
 Vector * crearVector(int n) {
   *Vector v;
   v = (Vector*)calloc(sizeof(Vector));
-   return NULL;
+   return v;
 }
 
 /*
