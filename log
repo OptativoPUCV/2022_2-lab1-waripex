@@ -371,3 +371,22 @@ Sun 14 Aug 2022 11:30:54 PM UTC:
  tests:  6|2
 total_score: 50/70
 9a9ad97
+Sun 14 Aug 2022 11:34:52 PM UTC: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:116:6: error: ‘c’ is a pointer; did you mean to use ‘->’?
+  116 |     c.datos = a.datos[i]+ b.datos[i];
+      |      ^
+      |      ->
+exercises.c:116:16: error: ‘a’ is a pointer; did you mean to use ‘->’?
+  116 |     c.datos = a.datos[i]+ b.datos[i];
+      |                ^
+      |                ->
+exercises.c:116:28: error: ‘b’ is a pointer; did you mean to use ‘->’?
+  116 |     c.datos = a.datos[i]+ b.datos[i];
+      |                            ^
+      |                            ->
+Compilation failed
+4cc8c65
