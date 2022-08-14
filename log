@@ -62,3 +62,13 @@ exercises.c:84:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 9b0d71b
+Sun 14 Aug 2022 12:53:28 AM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:81:4: error: expected expression before ‘Vector’
+   81 |   *Vector v = (Vector*)calloc(sizeof(Vector));
+      |    ^~~~~~
+Compilation failed
+17b2d53
