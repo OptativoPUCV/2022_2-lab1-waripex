@@ -173,3 +173,20 @@ exercises.c:84:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 12aab58
+Sun 14 Aug 2022 01:07:28 AM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:82:4: error: expected ‘,’ or ‘;’ before ‘return’
+   82 |    return NULL;
+      |    ^~~~~~
+exercises.c:81:11: error: unused variable ‘v’ [-Werror=unused-variable]
+   81 |   Vector* v = (Vector*) malloc(sizeof(n))
+      |           ^
+exercises.c:83:1: error: control reaches end of non-void function [-Werror=return-type]
+   83 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+3c7cb2f
