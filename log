@@ -72,3 +72,24 @@ exercises.c:81:4: error: expected expression before ‘Vector’
       |    ^~~~~~
 Compilation failed
 17b2d53
+Sun 14 Aug 2022 12:53:55 AM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:81:4: error: expected expression before ‘Vector’
+   81 |   *Vector v;
+      |    ^~~~~~
+exercises.c:82:3: error: ‘v’ undeclared (first use in this function)
+   82 |   v = (Vector*)calloc(sizeof(Vector));
+      |   ^
+exercises.c:82:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:82:16: error: too few arguments to function ‘calloc’
+   82 |   v = (Vector*)calloc(sizeof(Vector));
+      |                ^~~~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:542:14: note: declared here
+  542 | extern void *calloc (size_t __nmemb, size_t __size)
+      |              ^~~~~~
+Compilation failed
+80ddfa9
