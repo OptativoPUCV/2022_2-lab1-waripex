@@ -390,3 +390,14 @@ exercises.c:116:28: error: ‘b’ is a pointer; did you mean to use ‘->’?
       |                            ->
 Compilation failed
 4cc8c65
+Sun 14 Aug 2022 11:35:30 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:116:14: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  116 |     c->datos = a->datos[i] + b->datos[i];
+      |              ^
+cc1: all warnings being treated as errors
+Compilation failed
+e963b17
