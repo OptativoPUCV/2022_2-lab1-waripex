@@ -247,3 +247,13 @@ exercises.c:82:11: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 003e2fe
+Sun 14 Aug 2022 01:12:34 AM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:90:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+   90 |   *v[i] = &valor;
+      |   ^~~~~
+Compilation failed
+dcaf8e3
