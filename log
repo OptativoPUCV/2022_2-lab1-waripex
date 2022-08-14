@@ -257,3 +257,13 @@ exercises.c:90:3: error: invalid type argument of unary ‘*’ (have ‘Vector�
       |   ^~~~~
 Compilation failed
 dcaf8e3
+Sun 14 Aug 2022 01:12:58 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:90:5: error: ‘Vector’ has no member named ‘i’
+   90 |   *v->i = &valor;
+      |     ^~
+Compilation failed
+f7cb48d
