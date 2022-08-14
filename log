@@ -41,3 +41,24 @@ exercises.c:84:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 ed80dca
+Sun 14 Aug 2022 12:50:55 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:81:4: error: expected expression before ‘Vector’
+   81 |   *Vector v = (Vector*)calloc(sizeof(Vector));
+      |    ^~~~~~
+exercises.c:82:3: error: ‘cap’ undeclared (first use in this function)
+   82 |   cap = n;
+      |   ^~~
+exercises.c:82:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:83:11: error: ‘v’ undeclared (first use in this function)
+   83 |    return v;
+      |           ^
+exercises.c:84:1: error: control reaches end of non-void function [-Werror=return-type]
+   84 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+9b0d71b
