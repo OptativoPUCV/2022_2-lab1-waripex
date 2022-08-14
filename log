@@ -332,3 +332,13 @@ Sun 14 Aug 2022 11:00:27 PM UTC:
  tests:  4|3
 total_score: 40/70
 aa20560
+Sun 14 Aug 2022 11:13:36 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:95:6: error: expected expression before ‘)’ token
+   95 |   (v*).datos[i]= valor;
+      |      ^
+Compilation failed
+bb80d9b
